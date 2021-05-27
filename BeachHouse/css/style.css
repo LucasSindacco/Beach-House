@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar .container {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    position: absolute;
+}
+
+#navbar .container .toggle {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+}
+
+#navbar .container .toggle .toggle-one {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    content: '';
+    bottom: 1.5rem;
+    border-radius: 80rem;
+    left: 0;
+    background-color: #fff;
+}
+
+#navbar .container .toggle .toggle-two {
+    width: 80%;
+    height: 8px;
+    position: absolute;
+    content: '';
+    border-radius: 80rem;
+    bottom: .30rem;
+    left: 0;
+    background-color: #fff;
+}
+
+#navbar .container .toggle .toggle-three {
+    width: 50%;
+    height: 8px;
+    position: absolute;
+    content: '';
+    border-radius: 80rem;
+    bottom: -.90rem;
+    left: 0;
+    background-color: #fff;
+}
+
+
+/* Input sarch */
+
+#navbar .container .input-search {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+#navbar .container .input-search input {
+    padding: .50rem 2rem;
+    font-size: 20px;
+    border-radius: 80rem;
+    outline: none;
+    border: none;
+    width: 55%;
+    color: #000;
+    font-weight: 350;
+}
+
+#navbar .container .input-search input::placeholder {
+    color: rgb(0, 0, 0, 0.30);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#navbar .container .buttons-nav {
+    display: flex;
+}
+
+#navbar .container .buttons-nav .btn-login {
+    margin: 0 1rem;
+    display: flex;
+    border: 2px solid #ffff;
+    width: 142px;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+}
+
+#navbar .container .buttons-nav .btn-register {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    border: 2px solid #ffff;
+    width: 142px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Home page */
+
+#home-page .container {
+    width: 100%;
+    background-image: linear-gradient(to right, #1C7BA6, #1D9ABB);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+#home-page .container .text-left h1 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#home-page .container .text-left p {
+    color: #fff;
+    font-weight: 350;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    width: 40%;
+}
+
+#home-page .container .text-left .btn-shop {
+    background-color: #3FB1D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 50px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 80rem;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#home-page .container .circle {
+    width: 400px;
+    height: 400px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -10%;
+    bottom: -10%;
+}
+
+#home-page .container .circle-bg {
+    text-align: right;
+}
+
+#home-page .container .circle-bg .circle-one {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+#home-page .container .circle-bg .circle-two {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: -5rem;
+    left: -5rem;
+}
+
+#home-page .container .circle-bg img {
+    position: relative;
+    width: 517px;
+    height: 776px;
+    top: -50%;
+    z-index: 999;
+}
+
+#home-page .container .promotions {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    right: 0;
+    border-top-left-radius: 80rem;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 769px;
+    height: 156px;
+    background-color: #3FB1D0;
+}
+
+#home-page .container .promotions h2 {
+    font-size: 40px;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+}
+
+#home-page .container .promotions h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 214px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 80rem;
+}
